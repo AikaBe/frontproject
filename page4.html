@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART START</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000000; /* Черный фон для всего тела страницы */
+            color: #ffffff; /* Белый текст */
+        }
+
+        header {
+            padding: 20px;
+            background-color: #333333; /* Темно-серый фон для шапки */
+            color: #ffffff; /* Белый текст */
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        .nav-link {
+            display: inline-block;
+            background-color: #d7ff00;
+            color: black;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 0 5px;
+            border-radius: 5px;
+            text-decoration: none; /* Убираем подчеркивание */
+        }
+
+        .nav-link:hover {
+            background-color: #b9ff60;
+        }
+
+        /* Основной контейнер */
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start; /* Выравнивание по верху контейнера */
+            padding: 20px;
+            background-color: #b3b3b3; /* Белый фон для контейнера */
+            margin-bottom: 20px; /* Отступ снизу для контейнера */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для контейнера */
+        }
+
+        /* Левая секция с изображением */
+        .left-section {
+            width: 60%;
+            position: relative;
+        }
+
+        .left-section img {
+            width: 100%;
+            border-radius: 10px;
+            display: block; /* Убираем пробелы под изображением */
+        }
+
+        .invest-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #b9ff60;
+            border: 2px solid #000;
+            border-radius: 50%;
+            padding: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            color: black; /* Цвет текста на кнопке */
+            text-decoration: none; /* Убираем подчеркивание */
+        }
+
+        /* Правая секция с текстом и кнопками */
+        .right-section {
+            width: 35%;
+            background-color: #d3d3d3;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для секции */
+        }
+
+        .right-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid black;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            color: rgb(124, 123, 123); /* Цвет текста на кнопках */
+            text-decoration: none; /* Убираем подчеркивание */
+        }
+
+        /* Нижняя секция с логотипами партнеров */
+        .footer {
+            background-color: #000000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .footer .partners {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap; /* Обрезка логотипов при нехватке места */
+            gap: 10px; /* Отступы между логотипами */
+            margin-top: 10px;
+        }
+
+        .footer .partners img {
+            height: 30px;
+            max-width: 100px; /* Максимальная ширина логотипов */
+            object-fit: contain; /* Сохранение пропорций изображений */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Startup Investment Page</h1>
+        <nav>
+            <a href="page2.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="container">
+            <!-- Левая секция с изображением стартапа -->
+            <div class="left-section">
+                <figure>
+                    <img src="startup.jpg" alt="Startup Image"> <!-- Подставьте свою картинку -->
+                    <figcaption>Invest in the most promising startups!</figcaption>
+                </figure>
+                <a href="#" class="invest-button">INVEST!</a>
+            </div>
+            
+            <!-- Правая секция с текстом и кнопками -->
+            <div class="right-section">
+                <h2>CHOOSE BEST STARTUP TO INVEST!</h2>
+                <p>Text them:</p>
+                <a href="#" class="button">Analysis</a>
+                <a href="#" class="button">Business Plan</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Our partnerships:</p>
+        <div class="partners">
+            <img src="univ.jpg" alt="Astana IT University">
+            <img src="astan.jpg" alt="Astana Hub">
+            <img src="skiil.jpg" alt="Skillbox">
+            <img src="fiv.jpg" alt="Fiverr">
+        </div>
+        <p>2024, Site created by: </p>
+        <p>Beisekeeva Aizharkyn</p>
+        <p>Bekmanova Aizhan</p>
+    </footer>
+</body>
+</html>
