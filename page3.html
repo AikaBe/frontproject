@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART START</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #111; /* Темный фон */
+        }
+        header {
+            background-color: #191919; /* Темный фон для шапки */
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        .nav-link {
+            color: #d7ff00;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .nav-link:hover {
+            background-color: #4a4a4a;
+            border-radius: 5px;
+        }
+        .container {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar {
+            width: 25%;
+            background-color: #191919; /* Темный цвет для боковой панели */
+            padding: 20px;
+            color: white;
+            position: relative;
+        }
+        .sidebar h2 {
+            margin: 0;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .search-bar {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #2a2a2a;
+            color: white;
+        }
+        .user-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .user {
+            padding: 10px;
+            background-color: #2a2a2a; /* Более светлый оттенок для пользователей */
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .user:hover {
+            background-color: #333; /* Темнее при наведении */
+        }
+        .chat-area {
+            width: 75%;
+            background-color: #000; /* Черный фон для основной части чата */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .chat-area h2 {
+            margin: 0;
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #333; /* Линия под заголовком */
+        }
+        .chat-messages {
+            flex-grow: 1;
+            overflow-y: auto;
+            margin-bottom: 20px;
+        }
+        .message {
+            max-width: 60%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 10px;
+            line-height: 1.4;
+        }
+        .received {
+            background-color: #2a2a2a; /* Цвет для входящих сообщений */
+            align-self: flex-start;
+        }
+        .sent {
+            background-color: #4a4a4a; /* Цвет для отправленных сообщений */
+            align-self: flex-end;
+            color: #cfcfcf; /* Светлый цвет текста для отправленных сообщений */
+        }
+        .chat-input {
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+            border-top: 1px solid #333; /* Линия сверху для области ввода */
+        }
+        .chat-input input {
+            flex-grow: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #2a2a2a;
+            color: white;
+        }
+        .chat-input button {
+            padding: 10px 20px;
+            background-color: #4a4a4a;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+        }
+        .chat-input button:hover {
+            background-color: #666; /* Цвет при наведении на кнопку */
+        }
+        footer {
+            background-color: #191919; /* Темный фон для подвала */
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 12px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chat Interface</h1>
+        <nav>
+            <a href="page2.html" class="nav-link">Back</a>
+        </nav>
+    </header>
+    <main class="container">
+        <!-- Боковая панель -->
+        <aside class="sidebar">
+            <h2>All Jobs</h2>
+            <input type="text" placeholder="Search" class="search-bar">
+            <div class="user-list">
+                <div class="user">User 12345</div>
+                <div class="user">User 123456</div>
+                <div class="user">User 1234567</div>
+                <div class="user">User 12345678</div>
+                <div class="user">User 123456789</div>
+                <div class="user">User 0123456789</div>
+            </div>
+        </aside>
+        
+        <!-- Основная часть чата -->
+        <section class="chat-area">
+            <h2>Chat with User1234567!</h2>
+            <div class="chat-messages">
+                <div class="message received">Application Accepted<br>take my money and do the job!<br>deadline is 4 months! Hurry!</div>
+                <div class="message sent">Sí!</div>
+                <div class="message received">Spanish or English? You have to stick to one.</div>
+            </div>
+            
+            <!-- Поле для ввода -->
+            <div class="chat-input">
+                <input type="text" placeholder="Message">
+                <button>Send</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>2024, Site created by: </p>
+        <p>Beisekeeva Aizharkyn</p>
+        <p>Bekmanova Aizhan</p>
+    </footer>
+</body>
+</html>
