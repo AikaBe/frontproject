@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART START</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1d1d1d;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Чтобы основное содержание занимало всю высоту страницы */
+        }
+
+        .sidebar {
+            width: 200px;
+            height: 100vh;
+            background-color: #000000;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sidebar img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            width: 100%;
+        }
+
+        .sidebar ul li {
+            margin: 20px 0;
+        }
+
+        .sidebar ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            display: block;
+            padding: 10px;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #292828;
+            border-radius: 5px;
+        }
+
+        .main-content {
+            margin-left: 220px;
+            padding: 20px;
+            background: #333333;
+            flex: 1; /* Чтобы основное содержание занимало оставшееся пространство */
+            color: white;
+            overflow-y: auto; /* Позволяет прокрутку для основного контента */
+        }
+
+        .header {
+            background: linear-gradient(to right, #555, #333);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            color: #f5f5f5;
+            margin: 0;
+        }
+
+        .job-list {
+            margin-top: 20px;
+            max-height: calc(100vh - 160px);
+            overflow-y: auto;
+        }
+
+        .job-card {
+            background-color: #202020;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .job-logo {
+            width: 50px;
+            height: 40px;
+            margin-right: 15px;
+        }
+
+        .job-title {
+            color: white;
+            font-size: 18px;
+        }
+
+        .application-count {
+            background-color: yellow;
+            color: black;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .application-count:before {
+            content: "⚡";
+            margin-right: 5px;
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: auto; /* Убедиться, что футер находится внизу страницы */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <img src="logo0.png" alt="SMART Logo">
+        <ul>
+            <li><a href="page3.html">Inbox</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="page4.html">Startups</a></li>
+            <li><a href="#">Sourcing</a></li>
+            <li><a href="#">Career Page</a></li>
+            <li><a href="#">Job Boards</a></li>
+            <li><a href="#">Referrals</a></li>
+            <li><a href="#">Post a job</a></li>
+        </ul>
+        <div class="footer">
+            <p style="color: white;">SineX Inc.</p>
+            <p style="color: white;">Google</p>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <header class="header">
+            <h1>Hi, User!</h1>
+        </header>
+        <section>
+            <h2>Live Jobs</h2>
+            <p>Find your next opportunity among the available listings below.</p>
+            <div class="job-list">
+                <div class="job-card">
+                    <span class="job-title">Front End Dev.</span>
+                    <span class="application-count">45 Applications</span>
+                </div>
+                <div class="job-card">
+                    <span class="job-title">Front End Dev.</span>
+                    <span class="application-count">45 Applications</span>
+                </div>
+                <div class="job-card">
+                    <span class="job-title">Front End Dev.</span>
+                    <span class="application-count">45 Applications</span>
+                </div>
+                <div class="job-card">
+                    <span class="job-title">Front End Dev.</span>
+                    <span class="application-count">45 Applications</span>
+                </div>
+            </div>
+        </section>
+        <blockquote>“Choose a job you love, and you will never have to work a day in your life.” — Confucius</blockquote>
+        <ul>
+            <li>Responsive design</li>
+            <li>User-friendly interface</li>
+            <li>Job postings</li>
+        </ul>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="position">Position:</label>
+            <select id="position" name="position">
+                <option value="frontend">Front End Developer</option>
+                <option value="backend">Back End Developer</option>
+                <option value="fullstack">Full Stack Developer</option>
+            </select><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+
+    <footer>
+        <p>2024, Site created by: </p>
+        <p>Beisekeeva Aizharkyn</p>
+        <p>Bekmanova Aizhan</p>
+    </footer>
+
+</body>
+</html>
